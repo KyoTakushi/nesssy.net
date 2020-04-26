@@ -1,0 +1,19 @@
+.content-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px;
+}
+
+.post__title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.post__inner {
+  margin-top: 50px;
+
+  p {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
