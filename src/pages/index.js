@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import * as PIXI from 'pixi.js'
 import Layout from "../components/layout.js"
+import Graphic from "../components/graphic.js"
 
 export default () => (
   
@@ -18,7 +19,7 @@ export default () => (
         <Link className="nav__link" to="blog">works</Link>
       </div>
     </div>
-    <div id="area"><canvas id="canvas"></canvas></div>
+    <Graphic />
   </Layout>
 )
 

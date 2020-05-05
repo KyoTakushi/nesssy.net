@@ -1,17 +1,10 @@
-import "./src/styles/reset.css"
-import "./src/styles/app.scss"
-import "./src/styles/layout.scss"
-import "./src/styles/post.scss"
-import "./src/styles/animation.scss"
-
-/*
-//TODO separate!!!
+import React from 'react'
 import $ from "jquery"
 import * as PIXI from "pixi.js"
 
-export const onInitialClientRender = () => {
-   
-  if (document.getElementById('area')){
+class Graphic extends React.Component {
+
+  componentDidMount() {
     const app = new PIXI.Application({
                 view: document.getElementById('canvas'),
                 width: 500,
@@ -20,7 +13,7 @@ export const onInitialClientRender = () => {
                 antialias: true,
                 transparent: true
             });
-
+ 
     document.getElementById('area').appendChild(app.view);
 
     app.stage.interactive = true;
@@ -33,7 +26,7 @@ export const onInitialClientRender = () => {
     );
 
     const thing = new PIXI.Graphics();
-    
+
     thing.interactive = true;
     thing.buttonMode = true;
     thing.hitarea = shape;
@@ -57,32 +50,39 @@ export const onInitialClientRender = () => {
 
         thing.rotation = count * 0.1;
     });
-  
+    
+    const over = () => {
+      const elem = $('.nav a');
+      const graphic = $('#area');
+      let posX = elem.offset().left;
+      let posY = elem.offset().top;
+
+      $('.nav a').on('mouseover', function(){
+        let posX = $(this).offset().left;
+        let posY = $(this).offset().top;
+
+        graphic.animate({
+          top: posY,
+          left: posX + 50
+        }, 500);
+      });
+
+      elem.mouseleave(function(){
+        graphic.animate({
+          top: "45%",
+          left: "50%"
+        }, 500);
+      });
+    }
+
     over()
+  }
+  
+  render() {
+    return(
+      <div id="area"><canvas id="canvas"></canvas></div>
+    )
   }
 }
 
-const over = () => {
-  const elem = $('.nav a');
-  const graphic = $('#area');
-  let posX = elem.offset().left;
-  let posY = elem.offset().top;
-  
-  $('.nav a').on('mouseover', function(){
-    let posX = $(this).offset().left;
-    let posY = $(this).offset().top;
-    
-    graphic.animate({
-      top: posY,
-      left: posX + 50
-    }, 500);
-  });
-  
-  elem.mouseleave(function(){
-    graphic.animate({
-      top: "45%",
-      left: "50%"
-    }, 500);
-  });
-}
-*/
+export default Graphic

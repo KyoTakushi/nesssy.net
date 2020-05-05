@@ -11,8 +11,9 @@ export default ({ data }) => {
     <Layout>
       <div className="front-content front-content--list">
         <div className="content__nav left kaku">
-          <a href="/">HOME</a>
-          {/* using anchor tag to let the page re-render graphic on transition */}
+          <Link to="/">
+            HOME
+          </Link>
         </div>
         <div className="content__nav right kaku">
           <Link to="work">
