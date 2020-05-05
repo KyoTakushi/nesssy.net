@@ -1,20 +1,27 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Layer from "../components/layer.js"
-import ContentTable from "../components/content-table.js"
+import { Link, graphql } from "gatsby"
+import * as PIXI from 'pixi.js'
+import Layout from "../components/layout.js"
 
 export default () => (
-  <Layer>
-    <div className="front-wrapper">
-      <div className="front-content">
-        <h1 className="front__title">Neo <br />Testament</h1>
-        <div className="front__date">First Edition</div>
-        <div className="front__author">Written by Me</div>
+  
+  <Layout>
+    <div className="front-content top">
+      <div className="line line--top">
+        <div className="line__inner-text">Neo Testament <span>ver.1</span></div>
       </div>
-      <ContentTable />
+      <div className="line line--bottom">
+        <div className="line__inner-text">Kyo T</div>
+      </div>
+      <div className="nav">
+        <Link className="nav__link" to="blog">memos</Link>
+        <Link className="nav__link" to="blog">works</Link>
+      </div>
     </div>
-  </Layer>
+    <div id="area"><canvas id="canvas"></canvas></div>
+  </Layout>
 )
+
 export const query = graphql`
   query {
     site {

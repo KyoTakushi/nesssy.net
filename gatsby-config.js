@@ -9,6 +9,7 @@ module.exports = {
     title: `Title from siteMetadata`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,

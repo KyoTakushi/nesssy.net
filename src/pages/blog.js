@@ -2,31 +2,38 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
-import Layer from "../components/layer.js"
+import Layout from "../components/layout.js"
 import ContentTable from "../components/content-table.js"
 
 export default ({ data }) => {
   console.log(data)
   return (
-    <Layer>
-      <div className="front-wrapper">
-        <ContentTable />
-        <div className="front-content front-content--list">
-          <div className="index__title title-content bold">TECH BLOG</div>
-          <div className="content-list">
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-              <div key={node.id} className="content-list__item">
-                <Link
-                  to={node.fields.slug}
-                >
-                {node.frontmatter.title}<span>{node.frontmatter.date}</span>
-                </Link>
-              </div>
-            ))}
-          </div>
+    <Layout>
+      <div className="front-content front-content--list">
+        <div className="content__nav left kaku">
+          <a href="/">HOME</a>
+          {/* using anchor tag to let the page re-render graphic on transition */}
+        </div>
+        <div className="content__nav right kaku">
+          <Link to="work">
+            WORKS
+          </Link>
+        </div>
+        <div className="content__title kaku">TECH BLOG</div>
+        <div className="content__list">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id} className="content-list__item">
+              <Link
+                to={node.fields.slug}
+              >
+              {node.frontmatter.title}
+              </Link>
+              <span>{node.frontmatter.date}</span>
+            </div>
+          ))}
         </div>
       </div>
-    </Layer>
+    </Layout>
   )
 }
 

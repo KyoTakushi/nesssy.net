@@ -1,7 +1,7 @@
-.content-wrapper {
+.post {
   max-width: 900px;
   margin: auto;
-  padding: 50px;
+  padding: 50px 30px;
 }
 
 .post__title {
@@ -9,11 +9,15 @@
   margin-bottom: 10px;
 }
 
+.post__date {
+  font-size: 16px;
+}
+
 .post__inner {
   margin-top: 50px;
 
   p {
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 17px;
   }
 }

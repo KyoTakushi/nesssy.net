@@ -3,11 +3,11 @@ a {
   text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
 }
 
-.bold {
-  font-weight: bold;
+.kaku {
+  font-family: 'VT323', monospace;
 }
