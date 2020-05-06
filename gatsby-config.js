@@ -26,5 +26,11 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: ‘neo-testament’
+      },
+    }
   ]
 }

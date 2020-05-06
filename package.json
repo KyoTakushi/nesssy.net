@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby-plugin-s3 deploy"
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
@@ -32,6 +33,7 @@
     "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-plugin-s3": "^0.3.3",
     "jquery": "^3.5.1",
     "prettier": "^1.19.1"
   },
