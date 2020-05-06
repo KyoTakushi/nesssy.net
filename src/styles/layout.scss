@@ -165,7 +165,7 @@
 .content-list__item {
   font-size: 17px;
   font-weight: bold;
-  padding: 10px;
+  margin: 30px 10px;
   display: flex;
   justify-content: space-between;
 
@@ -185,5 +185,26 @@
   }
   &.right {
     right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content__title {
+    font-size: 17px;
+    text-align: right;
+  }
+
+  .content__list {
+    padding: 20px 10px;
+  }
+
+  .content-list__item {
+    flex-wrap: wrap;
+    margin: 20px 10px 10px;
+
+    span {
+      width: 100%;
+      margin: 10px 5px;
+    }
   }
 }

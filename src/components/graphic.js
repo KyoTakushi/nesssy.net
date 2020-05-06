@@ -1,7 +1,5 @@
 import React from 'react'
 import $ from "jquery"
-//import * as PIXI from "pixi.js"
-//const PIXI = require('pixi.js')
 
 class Graphic extends React.Component {
 
@@ -13,7 +11,7 @@ class Graphic extends React.Component {
                 view: document.getElementById('canvas'),
                 width: 500,
                 height: 400,
-                backgroundColor: 0x999999,
+                //backgroundColor: 0x999999,
                 antialias: true,
                 transparent: true
             });
