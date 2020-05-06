@@ -6,10 +6,8 @@ import $ from "jquery"
 class Graphic extends React.Component {
 
   componentDidMount() {
-    
-    if (typeof window !== 'undefined') {
-      const PIXI = require("pixi.js")
-    }
+
+    const PIXI = require("pixi.js")
     
     const app = new PIXI.Application({
                 view: document.getElementById('canvas'),
