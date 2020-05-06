@@ -1,10 +1,16 @@
 import React from 'react'
 import $ from "jquery"
-import * as PIXI from "pixi.js"
+//import * as PIXI from "pixi.js"
+//const PIXI = require('pixi.js')
 
 class Graphic extends React.Component {
 
   componentDidMount() {
+    
+    if (typeof window !== 'undefined') {
+      const PIXI = require("pixi.js")
+    }
+    
     const app = new PIXI.Application({
                 view: document.getElementById('canvas'),
                 width: 500,

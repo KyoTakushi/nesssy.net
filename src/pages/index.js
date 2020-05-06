@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import * as PIXI from 'pixi.js'
 import Layout from "../components/layout.js"
 import Graphic from "../components/graphic.js"
 

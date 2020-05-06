@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: ‘neo-testament’
+        bucketName: `neo-testament`
       },
     }
   ]
