@@ -1,16 +1,18 @@
 .post {
   max-width: 900px;
-  margin: auto;
-  padding: 50px 30px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid;
+  background: #fff;
 }
 
 .post__title {
-  font-size: 25px;
+  font-size: 23px;
   margin-bottom: 10px;
 }
 
 .post__date {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .post__inner {

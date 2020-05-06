@@ -7,7 +7,7 @@ import Graphic from "../components/graphic.js"
 export default () => (
   
   <Layout>
-    <div className="front-content top">
+    <div className="wrapper top">
       <div className="line line--top">
         <div className="line__inner-text">Neo Testament <span>ver.1</span></div>
       </div>
