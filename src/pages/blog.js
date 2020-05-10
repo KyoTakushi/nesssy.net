@@ -6,7 +6,6 @@ import Layout from "../components/layout.js"
 import Header from "../components/header.js"
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <div className="wrapper wrapper--list">

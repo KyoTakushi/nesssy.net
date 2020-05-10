@@ -2,11 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout.js"
 import Header from "../components/header.js"
+import MetaPost from "../components/meta/meta-post.js"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
+      <MetaPost post={post}/>
       <Header />
       <div className="wrapper--post">
       <div className="content__title kaku">TECH BLOG</div>
