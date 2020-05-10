@@ -2,10 +2,12 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout.js"
 import Graphic from "../components/graphic.js"
+import MetaIndex from "../components/meta/meta-index.js"
 
 export default () => (
   
   <Layout>
+    <MetaIndex />
     <div className="wrapper top">
       <div className="line line--top">
         <div className="line__inner-text">Neo Testament <span>ver.1</span></div>
