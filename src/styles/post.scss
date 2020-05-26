@@ -17,10 +17,21 @@
 }
 
 .post__inner {
-  margin-top: 50px;
+  padding-top: 60px;
+  border-top: 1px solid;
+  margin-top: 15px;
 
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
   p {
-    padding: 10px 0;
-    font-size: 16px;
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  strong {
+    font-weight: bold;
   }
 }
