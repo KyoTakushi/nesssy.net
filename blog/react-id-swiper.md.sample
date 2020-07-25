@@ -1,0 +1,15 @@
+---
+date: "2020-02-27"
+title: "This Is First Post"
+language: "en"
+---
+
+react-id-swiperを使おうとしたところ、
+
+コンポーネントの呼び出しには間に合わない
+
+直接書く
+
+```
+
+```

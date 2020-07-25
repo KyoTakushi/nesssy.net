@@ -1,14 +1,17 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const moment = require('moment')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages`})
+    const path = createFilePath({ node, getNode, trailingSlash: false})
+    const postDate = moment(node.frontmatter.date)
+    const url = `/blog/${postDate.format("YYYY/MM/DD")}/${node.frontmatter.slug}`
     createNodeField({
       node,
       name: `slug`,
-      value: slug,
+      value: url,
     })
   }
 }

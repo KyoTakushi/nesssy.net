@@ -1,4 +1,5 @@
 ---
+slug: "first-post"
 date: "2020-02-27"
 title: "This Is My First Post"
 language: "en"

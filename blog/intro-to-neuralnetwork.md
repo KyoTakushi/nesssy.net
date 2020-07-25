@@ -1,4 +1,5 @@
 ---
+slug: "intro-to-natural-language-processsing"
 date: "2020-05-24"
 title: "自然言語処理についてざっくりと"
 language: "ja"
