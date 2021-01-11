@@ -1,6 +1,6 @@
 my website
 
-# 開発時
+# 開発する時
 ```
 gatsby develop
 ```
