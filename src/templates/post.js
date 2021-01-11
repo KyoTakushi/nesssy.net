@@ -11,7 +11,7 @@ export default ({ data }) => {
       <MetaPost post={post}/>
       <Header />
       <div className="wrapper--post">
-      <div className="content__title kaku">TECH BLOG</div>
+      <div className="content__title">TECH BLOG</div>
         <div className="post">
           <h1 className="post__title">{post.frontmatter.title}</h1>
           <div className="post__date">{post.frontmatter.date}</div>

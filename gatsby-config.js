@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -59,7 +60,7 @@ module.exports = {
               },
               escapeEntities: {},
             }
-          }
+          },
         ],
       },
     },
@@ -76,6 +77,9 @@ module.exports = {
       options: {
         bucketName: `nessssy.net`
       },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`
     }
   ]
 }
