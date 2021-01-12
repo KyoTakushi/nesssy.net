@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout.js"
-import Header from "../components/header.js"
+import Layout from "../components/layout"
+import Header from "../components/header"
 import BlogContent from "../components/blog/BlogContent"
 
 export default ({ data }) => {

@@ -2,10 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 
-import Layout from "../components/layout.js"
-import MainPortal from "../components/MainPortal.js"
-import SocialLinks from "../components/SocialLinks.js"
-import MetaIndex from "../components/meta/meta-index.js"
+import Layout from "../components/layout"
+import MainPortal from "../components/MainPortal"
+import SocialLinks from "../components/SocialLinks"
+import MetaIndex from "../components/meta/meta-index"
 
 //kyotakushi
 import k from "../images/k.png";
