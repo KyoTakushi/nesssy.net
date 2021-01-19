@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import * as THREE from 'three';
 import styled from "styled-components";
-import { Material } from "three";
 
 const Graphic = () => {
 
@@ -15,6 +14,7 @@ const Graphic = () => {
   let stars;
   const PARTICLE_NUMBER = 6000;
 
+  //宇宙
   function createSpace() {
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);

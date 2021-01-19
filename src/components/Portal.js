@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import MainPortal from "../components/MainPortal"
-import SocialLinks from "../components/SocialLinks"
+import MainPortal from "../components/mainPortal"
+import SocialLinks from "../components/socialLinks"
 
 // Hello, my name is kyotakushi!
 import k from "../images/k.png"
