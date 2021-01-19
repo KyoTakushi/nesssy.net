@@ -44,12 +44,12 @@ const PortalLink = styled.div`
   position: absolute;
   cursor: pointer;
   a {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 2px;
     color: #fff;
   }
   a span {
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 5px;
   }
   ${props => props.content == 'portfolio' && `

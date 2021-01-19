@@ -20,6 +20,7 @@ export default ({ data }) => {
 
 const ContentWrapper = styled.div`
   position: relative;
+  overflow: auto;
 `
 
 const ContentTitle = styled.div`

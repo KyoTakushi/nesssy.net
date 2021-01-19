@@ -8,7 +8,7 @@ export default ({ children }) => (
 )
 
 const GlobalWrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   background: #1d1d1d;
   //font-family: 'VT323', monospace;
 `
