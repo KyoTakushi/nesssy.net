@@ -2,23 +2,20 @@ import React from "react"
 import styled from "styled-components"
 import website from "../../images/ss_website.jpg"
 
-const PortfolioContent = () => {
-  return (
-    <WorkContainer>
-      <PortfolioItem />
-    </WorkContainer>
-  )
-}
+export default () => (
+  <WorkContainer>
+    <PortfolioItem />
+  </WorkContainer>
+)
 
-const PortfolioItem = () => {
-  return (
-    <WorkSingleItem>
-      <WorkSingleThumb src={website} />
-      <WorkSingleTitle>website of KYOTAKUSHI (this website)</WorkSingleTitle>
-      <WorkSingleDescription>Description</WorkSingleDescription>
-    </WorkSingleItem>
-  )
-}
+//仮で１つ入れている
+const PortfolioItem = () => (
+  <WorkSingleItem>
+    <WorkSingleThumb src={website} />
+    <WorkSingleTitle>website of KYOTAKUSHI (this website)</WorkSingleTitle>
+    <WorkSingleDescription>Description</WorkSingleDescription>
+  </WorkSingleItem>
+)
 
 const WorkContainer = styled.div`
   display: grid;
@@ -62,5 +59,3 @@ const WorkSingleTitle = styled.div`
 const WorkSingleDescription = styled.div`
 
 `
-
-export default PortfolioContent;

@@ -2,21 +2,19 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 
-export default ({ data }) => {
-  return (
-    <ContentWrapper>
-      <ContentTitle>TECH BLOG</ContentTitle>
-      <ContentList>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <ContentListItem key={node.id}>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-            <span>{node.frontmatter.date}</span>
-          </ContentListItem>
-        ))}
-      </ContentList>
-    </ContentWrapper>
-  );
-}
+export default ({ data }) => (
+  <ContentWrapper>
+    <ContentTitle>TECH BLOG</ContentTitle>
+    <ContentList>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <ContentListItem key={node.id}>
+          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+          <span>{node.frontmatter.date}</span>
+        </ContentListItem>
+      ))}
+    </ContentList>
+  </ContentWrapper>
+)
 
 const ContentWrapper = styled.div`
   position: relative;

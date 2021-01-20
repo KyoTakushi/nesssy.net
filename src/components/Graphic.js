@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import * as THREE from 'three';
 import styled from "styled-components";
 
-const Graphic = () => {
+export default () => {
 
   useEffect(() => {
     createSpace();
@@ -126,5 +126,3 @@ const GlRenderArea = styled.div`
     //background: #000;
   }
 `
-
-export default Graphic;

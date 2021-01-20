@@ -4,23 +4,26 @@ import styled from "styled-components";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import me from "../images/me.png";
 
-const MainPortal = () => {
-
-  return (
-    <CenterImageContainer>
-      <SelfPortrait src={me} />
-      <PortalLink content="portfolio">
-        <AniLink swipe direction="left" to="portfolio">portfolio<span>ポートフォリオ</span></AniLink>
-      </PortalLink>
-      <PortalLink content="blog">
-        <AniLink swipe direction="left" to="blog">blog<span>ブログ</span></AniLink>
-      </PortalLink>
-      <PortalLink content="about">
-        <AniLink to="blog">about<span>自己紹介</span></AniLink>
-      </PortalLink>
-    </CenterImageContainer>
-  );
-}
+ export default () => (
+   <CenterImageContainer>
+     <SelfPortrait src={me} />
+     <PortalLink content="portfolio">
+       <AniLink swipe direction="left" to="portfolio">
+         portfolio<span>ポートフォリオ</span>
+       </AniLink>
+     </PortalLink>
+     <PortalLink content="blog">
+       <AniLink swipe direction="left" to="blog">
+         blog<span>ブログ</span>
+       </AniLink>
+     </PortalLink>
+     <PortalLink content="about">
+       <AniLink to="blog">
+         about<span>自己紹介</span>
+       </AniLink>
+     </PortalLink>
+   </CenterImageContainer>
+ )
 
 const CenterImageContainer = styled.div`
   top: 50%;
@@ -80,5 +83,3 @@ const PortalLink = styled.div`
     transition: width 0.5s;
   }
 `
-
-export default MainPortal;

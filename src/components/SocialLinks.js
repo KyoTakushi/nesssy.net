@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import github from "../images/icon/GitHub-Mark-Light-64px.png";
+import github from "../images/icon/GitHub-Mark-Light-64px.png"
 
 const socials = {
   github: {
@@ -10,15 +10,13 @@ const socials = {
   }
 }
 
-const SocialLinks = () => {
-  return (
+ export default () => (
     <IconContainer>
       <IconItem src={socials.github.icon}>
         <a href={socials.github.link} target="_blank" title="github" />
       </IconItem>
     </IconContainer>
-  );
-}
+)
 
 const IconContainer = styled.div`
   display: flex;
@@ -41,5 +39,3 @@ const IconItem = styled.div`
     height: 100%;
   }
 `
-
-export default SocialLinks;

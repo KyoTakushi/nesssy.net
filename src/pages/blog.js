@@ -4,14 +4,12 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import BlogContent from "../components/blog/BlogContent"
 
-export default ({ data }) => {
-  return (
-    <Layout>
-      <Header />
-      <BlogContent data={data} />
-    </Layout>
-  )
-}
+export default ({ data }) => (
+  <Layout>
+    <Header />
+    <BlogContent data={data} />
+  </Layout>
+)
 
 export const query = graphql`
   query {
