@@ -2,8 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Header from "../components/header"
-import BlogContent from "../components/blog/BlogContent"
-import styled from "styled-components"
+import BlogContent from "../components/blog/blogContent"
 import ContentWrapper from "../components/contentWrapper"
 
 export default ({ data }) => (

@@ -1,5 +1,5 @@
 ---
-slug: "javascript-fundamentals2020-pt1"
+slug: "javascript-reduce"
 date: "2020-10-17"
 title: "JavaScriptと配列（reduceしてますか）"
 language: "ja"

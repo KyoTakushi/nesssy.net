@@ -5,6 +5,8 @@ title: "styled-jsx使うときの注意（メモ）"
 language: "ja"
 ---
 
+rails-reactでReact側でstyled-jsxを使用したときに遭遇したエラー。  
+
 以下React内
 ```javascript
   <>

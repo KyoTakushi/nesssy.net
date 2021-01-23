@@ -8,6 +8,14 @@ export default ({ children }) => (
 )
 
 const Wrapper = styled.div`
-  background: #000;
+  background: rgba(0,0,0,1);
   min-height: 100vh;
+  animation: fadeIn 1s;
+  opacity: 1;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+  }
 `

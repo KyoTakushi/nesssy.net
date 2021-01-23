@@ -20,11 +20,11 @@ const ContentWrapper = styled.div`
   overflow: auto;
 `
 
-const ContentTitle = styled.div`
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-`
+// const ContentTitle = styled.div`
+//   text-align: center;
+//   font-size: 16px;
+//   color: #fff;
+// `
 
 const ContentList = styled.div`
   margin: 50px auto;
@@ -40,6 +40,7 @@ const ContentListItem = styled.div`
   margin: 30px 10px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   a {
     max-width: 80%;
@@ -51,7 +52,23 @@ const ContentListItem = styled.div`
     margin-left: 50px;
   }
 
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    //transition: 0.5s;
+  }
+
   &:hover {
-    opacity: 0.7;
+    opacity: 0.9;
+    &::before {
+      width: 100%;
+      transition: width 0.5s;
+    }
   }
 `
