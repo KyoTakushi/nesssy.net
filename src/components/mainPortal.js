@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-//import AniLink from "gatsby-plugin-transition-link/AniLink";
 import me from "../images/me.png";
 
  export default () => (

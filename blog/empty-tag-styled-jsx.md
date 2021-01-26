@@ -1,7 +1,7 @@
 ---
 slug: "about-using-styled-jsx"
 date: "2021-01-15"
-title: "styled-jsx使うときの注意（メモ）"
+title: "styled-jsx使うときの注意（メモ）- React -"
 language: "ja"
 ---
 

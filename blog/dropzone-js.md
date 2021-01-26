@@ -1,7 +1,7 @@
 ---
 slug: "dropzone-js"
 date: "2019-12-14"
-title: "dropzone.jsを使ってみた"
+title: "dropzone.jsを使ってみた - JavaScript -"
 language: "ja"
 ---
 

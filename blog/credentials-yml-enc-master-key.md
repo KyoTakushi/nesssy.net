@@ -1,7 +1,7 @@
 ---
 slug: "permission-error-master-key"
 date: "2020-07-26"
-title: "binread': Permission denied @ rb_sysopen - /config/master.key (Errno::EACCES) の解消方法"
+title: "binread': Permission denied @ rb_sysopen - /config/master.key (Errno::EACCES) の解消方法 - Ruby on Rails -"
 language: "ja"
 ---
 

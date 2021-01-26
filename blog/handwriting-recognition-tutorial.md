@@ -1,7 +1,7 @@
 ---
 slug: "Gradio-Tensorflow-handwriting-recognition"
 date: "2020-07-19"
-title: "GradioとTensorflowを使って手書き認識"
+title: "GradioとTensorflowを使って手書き認識 - Python, Tensorflow -"
 language: "ja"
 ---
 

@@ -1,7 +1,7 @@
 ---
 slug: "how-to-override-material-ui-style"
 date: "2021-01-12"
-title: "ThemeProviderとcreateMuiThemeでMaterial-UIのスタイルを上書きした"
+title: "ThemeProviderとcreateMuiThemeでMaterial-UIのスタイルを上書きした - React -"
 language: "ja"
 ---
 

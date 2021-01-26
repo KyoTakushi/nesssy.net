@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Header from "../components/header"
-import BlogContent from "../components/blog/blogContent"
-import ContentWrapper from "../components/contentWrapper"
+import BlogContent from "./blogContent"
+import Layout from "../layout"
+import Header from "../header"
+import ContentWrapper from "../contentWrapper"
 
 export default ({ data }) => (
   <Layout>
@@ -14,9 +14,13 @@ export default ({ data }) => (
   </Layout>
 )
 
-export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC}) {
+export const listQuery = graphql`
+  query listQuery($skip: Int!, $limit: Int!){
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC}
+      skip: $skip
+      limit: $limit
+    ) {
       edges {
         node {
           id

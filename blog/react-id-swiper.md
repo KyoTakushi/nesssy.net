@@ -1,6 +1,7 @@
 ---
+slug: "react-id-swiper-error"
 date: "2020-08-27"
-title: "react-id-swiperがうまく動かなかったときにやったこと"
+title: "react-id-swiperがうまく動かなかったときにやったこと - React -"
 language: "ja"
 ---
 

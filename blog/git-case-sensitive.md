@@ -1,7 +1,7 @@
 ---
 slug: "gatsby-error-git"
 date: "2021-01-20"
-title: "gitが大文字小文字の変化を無視してくる"
+title: "gitが大文字小文字の変化を無視してくる - git -"
 language: "ja"
 ---
 

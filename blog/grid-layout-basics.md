@@ -1,7 +1,7 @@
 ---
 slug: "grid-layout-basics"
 date: "2020-09-22"
-title: "CSS Grid Layoutを使ってみます"
+title: "CSS Grid Layoutを使ってみます - CSS3 -"
 language: "ja"
 ---
 

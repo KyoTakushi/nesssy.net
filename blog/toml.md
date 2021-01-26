@@ -1,7 +1,7 @@
 ---
 slug: "what-is-toml"
 date: "2020-03-15"
-title: "tomlを使ってみる"
+title: "tomlを使ってみる - toml -"
 language: "ja"
 ---
 

@@ -1,7 +1,7 @@
 ---
 slug: "what-is-magic-number"
 date: "2020-07-12"
-title: "改めてマジックナンバーは避けたい"
+title: "改めてマジックナンバーは避けたい - JavaScript, general -"
 language: "ja"
 ---
 

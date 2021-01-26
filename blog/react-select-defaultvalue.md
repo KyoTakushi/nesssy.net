@@ -1,7 +1,7 @@
 ---
 slug: "react-select-defaultvalue"
 date: "2021-01-08"
-title: "動的に生成したoptionとselectにdefaultValueを設定する(React)"
+title: "動的に生成したoptionとselectにdefaultValueを設定する - React -"
 language: "ja"
 ---
 
