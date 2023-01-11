@@ -31,7 +31,7 @@
     "gatsby-remark-line-breaks": "^1.0.0",
     "gatsby-remark-prismjs": "^3.5.10",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.8.25",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.3",
     "gsap": "^3.5.1",
     "moment": "^2.27.0",
